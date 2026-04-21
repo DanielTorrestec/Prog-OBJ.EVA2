@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva_16_polimorfismo">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="com.mycompany.eva_16_polimorfismo" visibility="public" xPosition="63.0" yPosition="298.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="radio"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="com.mycompany.eva_16_polimorfismo" visibility="public" xPosition="397.0" yPosition="298.0">
+      <Fields>
+        <Field name="Base" type="double" visibility="public"/>
+        <Field name="altura" type="double" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="Base"/>
+          <Argument type="double" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="double" name="Base"/>
+        </Method>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="double" name="altura"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Figuras" package="com.mycompany.eva_16_polimorfismo" visibility="public" xPosition="249.0" yPosition="131.0">
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="package"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.mycompany.eva_16_polimorfismo.Circulo" target="com.mycompany.eva_16_polimorfismo.Figuras"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.mycompany.eva_16_polimorfismo.Rectangulo" target="com.mycompany.eva_16_polimorfismo.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
