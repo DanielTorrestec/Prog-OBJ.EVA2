@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_20_composicion_2">
+  <ClassDiagramComponents>
+    <Class name="EVA2_20_COMPOSICION_2" package="com.mycompany.eva2_20_composicion_2" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Motor" package="com.mycompany.eva2_20_composicion_2" visibility="public" xPosition="215.0" yPosition="616.0">
+      <Fields>
+        <Field name="cilindros" type="int" visibility="private"/>
+        <Field name="combustible" type="char" visibility="private"/>
+        <Field name="capacidad" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="cilindros"/>
+          <Argument type="char" name="combustible"/>
+          <Argument type="double" name="capacidad"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCilindros" returnType="int" visibility="public"/>
+        <Method name="setCilindros" returnType="void" visibility="public">
+          <Argument type="int" name="cilindros"/>
+        </Method>
+        <Method name="getCombustible" returnType="char" visibility="public"/>
+        <Method name="setCombustible" returnType="void" visibility="public">
+          <Argument type="char" name="combustible"/>
+        </Method>
+        <Method name="getCapacidad" returnType="double" visibility="public"/>
+        <Method name="setCapacidad" returnType="void" visibility="public">
+          <Argument type="double" name="capacidad"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="com.mycompany.eva2_20_composicion_2" visibility="public" xPosition="172.0" yPosition="151.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="motor" type="Motor" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="anio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="Motor" name="motor"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getAnio" returnType="int" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="int" name="anio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getMotor" returnType="Motor" visibility="public"/>
+        <Method name="setMotor" returnType="void" visibility="public">
+          <Argument type="Motor" name="motor"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="motor" source="com.mycompany.eva2_20_composicion_2.Vehiculo" target="com.mycompany.eva2_20_composicion_2.Motor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.eva2_20_composicion_2.Vehiculo" target="com.mycompany.eva2_20_composicion_2.Motor" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
