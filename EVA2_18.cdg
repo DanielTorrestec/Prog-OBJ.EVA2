@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_18_composicion">
+  <ClassDiagramComponents>
+    <Class name="Direccion" package="com.mycompany.eva2_18_composicion" visibility="public" xPosition="213.0" yPosition="518.0">
+      <Fields>
+        <Field name="calle" type="String" visibility="private"/>
+        <Field name="colonia" type="String" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="ciudad" type="String" visibility="private"/>
+        <Field name="cp" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="calle"/>
+          <Argument type="String" name="colonia"/>
+          <Argument type="int" name="numero"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="cp"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCalle" returnType="String" visibility="public"/>
+        <Method name="setCalle" returnType="void" visibility="public">
+          <Argument type="String" name="calle"/>
+        </Method>
+        <Method name="getColonia" returnType="String" visibility="public"/>
+        <Method name="setColonia" returnType="void" visibility="public">
+          <Argument type="String" name="colonia"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getCp" returnType="String" visibility="public"/>
+        <Method name="setCp" returnType="void" visibility="public">
+          <Argument type="String" name="cp"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EVA2_18_COMPOSICION" package="com.mycompany.eva2_18_composicion" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="com.mycompany.eva2_18_composicion" visibility="public" xPosition="37.0" yPosition="134.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="direccion" type="Direccion" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="calle"/>
+          <Argument type="String" name="colonia"/>
+          <Argument type="int" name="numero"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="cp"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getDireccion" returnType="Direccion" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="Direccion" name="direccion"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.mycompany.eva2_18_composicion.Persona" target="com.mycompany.eva2_18_composicion.Direccion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="direccion" source="com.mycompany.eva2_18_composicion.Persona" target="com.mycompany.eva2_18_composicion.Direccion" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
