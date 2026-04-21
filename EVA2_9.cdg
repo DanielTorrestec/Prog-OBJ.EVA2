@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_9_abstract">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="com.mycompany.eva2_9_abstract" visibility="public" xPosition="86.0" yPosition="464.0">
+      <Fields>
+        <Field name="claveempleado" type="String" visibility="private"/>
+        <Field name="puesto" type="String" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+        <Field name="annioIngreso" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="claveempleado"/>
+          <Argument type="String" name="puesto"/>
+          <Argument type="double" name="salario"/>
+          <Argument type="int" name="annioIngreso"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getClaveempleado" returnType="String" visibility="public"/>
+        <Method name="setClaveempleado" returnType="void" visibility="public">
+          <Argument type="String" name="claveempleado"/>
+        </Method>
+        <Method name="getPuesto" returnType="String" visibility="public"/>
+        <Method name="setPuesto" returnType="void" visibility="public">
+          <Argument type="String" name="puesto"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="double" name="salario"/>
+        </Method>
+        <Method name="getAnnioIngreso" returnType="int" visibility="public"/>
+        <Method name="setAnnioIngreso" returnType="void" visibility="public">
+          <Argument type="int" name="annioIngreso"/>
+        </Method>
+        <Method name="calcularAntiguedad" returnType="int" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="empleado" package="com.mycompany.eva2_9_abstract" visibility="public" xPosition="73.0" yPosition="10.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="com.mycompany.eva2_9_abstract" visibility="public" isAbstract="true" xPosition="283.0" yPosition="119.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="apellidos" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellidos" returnType="String" visibility="public"/>
+        <Method name="setApellidos" returnType="void" visibility="public">
+          <Argument type="String" name="apellidos"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="calcularAntiguedad" returnType="int" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.mycompany.eva2_9_abstract.Empleado" target="com.mycompany.eva2_9_abstract.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
