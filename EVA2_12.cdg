@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_12_herencia_interfaces">
+  <ClassDiagramComponents>
+    <Class name="EVA2_12_Herencia_Interfaces" package="com.mycompany.eva2_12_herencia_interfaces" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Demostracion" package="com.mycompany.eva2_12_herencia_interfaces" visibility="public" xPosition="234.0" yPosition="390.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarSaludo" returnType="void" visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+        <Method name="mostrarMensaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Prueba" package="com.mycompany.eva2_12_herencia_interfaces" visibility="public" xPosition="271.0" yPosition="122.0">
+      <Methods>
+        <Method name="mostrarMensaje" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="OtraPrueba" package="com.mycompany.eva2_12_herencia_interfaces" visibility="public" xPosition="234.0" yPosition="247.0">
+      <Methods>
+        <Method name="mostrarSaludo" returnType="void" visibility="package">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.mycompany.eva2_12_herencia_interfaces.Demostracion" target="com.mycompany.eva2_12_herencia_interfaces.OtraPrueba"/>
+    <IsRelation name="is" source="com.mycompany.eva2_12_herencia_interfaces.OtraPrueba" target="com.mycompany.eva2_12_herencia_interfaces.Prueba"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
