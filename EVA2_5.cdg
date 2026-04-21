@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_5_ejemplo_herencia">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="com.mycompany.eva2_5_ejemplo_herencia" visibility="public" xPosition="22.0" yPosition="223.0">
+      <Fields>
+        <Field name="numeroEmpleado" type="String" visibility="private"/>
+        <Field name="puesto" type="String" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="numeroEmpleado"/>
+          <Argument type="String" name="puesto"/>
+          <Argument type="double" name="salario"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="ap_materno"/>
+          <Argument type="String" name="ap_paterno"/>
+          <Argument type="String" name="RFC"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="char" name="genero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumeroEmpleado" returnType="String" visibility="public"/>
+        <Method name="setNumeroEmpleado" returnType="void" visibility="public">
+          <Argument type="String" name="numeroEmpleado"/>
+        </Method>
+        <Method name="getPuesto" returnType="String" visibility="public"/>
+        <Method name="setPuesto" returnType="void" visibility="public">
+          <Argument type="String" name="puesto"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="double" name="salario"/>
+        </Method>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVA2_5_EJEMPLO_HERENCIA" package="com.mycompany.eva2_5_ejemplo_herencia" visibility="public" xPosition="22.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="com.mycompany.eva2_5_ejemplo_herencia" visibility="public" xPosition="180.0" yPosition="597.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="ap_materno" type="String" visibility="private"/>
+        <Field name="ap_paterno" type="String" visibility="private"/>
+        <Field name="RFC" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="genero" type="char" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="ap_materno"/>
+          <Argument type="String" name="ap_paterno"/>
+          <Argument type="String" name="RFC"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="char" name="genero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getAp_materno" returnType="String" visibility="public"/>
+        <Method name="setAp_materno" returnType="void" visibility="public">
+          <Argument type="String" name="ap_materno"/>
+        </Method>
+        <Method name="getAp_paterno" returnType="String" visibility="public"/>
+        <Method name="setAp_paterno" returnType="void" visibility="public">
+          <Argument type="String" name="ap_paterno"/>
+        </Method>
+        <Method name="getRFC" returnType="String" visibility="public"/>
+        <Method name="setRFC" returnType="void" visibility="public">
+          <Argument type="String" name="RFC"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getGenero" returnType="char" visibility="public"/>
+        <Method name="setGenero" returnType="void" visibility="public">
+          <Argument type="char" name="genero"/>
+        </Method>
+        <Method name="generarNombreCom" returnType="String" visibility="public"/>
+        <Method name="regresarGenero" returnType="String" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.mycompany.eva2_5_ejemplo_herencia.Empleado" target="com.mycompany.eva2_5_ejemplo_herencia.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
