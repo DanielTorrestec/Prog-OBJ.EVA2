@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_4_constructores">
+  <ClassDiagramComponents>
+    <Class name="EVA2_4_CONSTRUCTORES" package="com.mycompany.eva2_4_constructores" visibility="public" xPosition="31.0" yPosition="22.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="com.mycompany.eva2_4_constructores" visibility="public" xPosition="268.0" yPosition="395.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Empleado" package="com.mycompany.eva2_4_constructores" visibility="public" xPosition="31.0" yPosition="395.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="Salario"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.mycompany.eva2_4_constructores.Empleado" target="com.mycompany.eva2_4_constructores.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
