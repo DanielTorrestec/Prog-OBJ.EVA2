@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.eva2_6_herencia">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="com.mycompany.eva2_6_herencia" visibility="public" xPosition="83.0" yPosition="478.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+        <Field name="claveEmpleado" type="String" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="String" name="claveEmpleado"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellidos" returnType="String" visibility="public"/>
+        <Method name="setApellidos" returnType="void" visibility="public">
+          <Argument type="String" name="apellidos"/>
+        </Method>
+        <Method name="getClaveEmpleado" returnType="String" visibility="public"/>
+        <Method name="setClaveEmpleado" returnType="void" visibility="public">
+          <Argument type="String" name="claveEmpleado"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="double" name="salario"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoBase" package="com.mycompany.eva2_6_herencia" visibility="public" xPosition="69.0" yPosition="196.0">
+      <Fields>
+        <Field name="annioIngreso" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="String" name="claveEmpleado"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAnnioIngreso" returnType="int" visibility="public"/>
+        <Method name="setAnnioIngreso" returnType="void" visibility="public">
+          <Argument type="int" name="annioIngreso"/>
+        </Method>
+        <Method name="antiguedad" returnType="int" visibility="public"/>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoHonorarios" package="com.mycompany.eva2_6_herencia" visibility="public" xPosition="643.0" yPosition="669.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="EVA2_6_HERENCIA" package="com.mycompany.eva2_6_herencia" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.mycompany.eva2_6_herencia.EmpleadoBase" target="com.mycompany.eva2_6_herencia.Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
